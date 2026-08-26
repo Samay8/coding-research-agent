@@ -127,3 +127,10 @@ coding-research-agent/
 ├── requirements.txt
 └── README.md
 ```
+
+## Run with Docker
+
+```bash
+docker build -t coding-research-agent .
+docker run --env-file .env coding-research-agent <repo-url> "<question>"
+```
